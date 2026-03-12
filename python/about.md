@@ -2,6 +2,7 @@
 一般使用python或者和ppl混合编写. ppl是什么？ `Prime Programming Language`，HP Prime自带的编程语言.
 HP Prime自带`micropython 1.9.4`.
 
+## 好玩的
 python与ppl
 python中引用ppl代码如下：
 ```python
@@ -18,7 +19,7 @@ print(ppleval('print("hello ppl!")'))
 ```
 
 控制台想使用0号字体？
-```
+```python
 def hprint(text):
   text = text.replace('"', '""')
   if len(text) <= 52:
@@ -31,6 +32,17 @@ def hprint(text):
 
 print = hprint
 ```
+
+!?锁机?!
+```python
+while True:
+  try:
+    a = 1
+  except KeyboardInterrupt:
+    continue
+```
+现在你只能按symb+On来重启了。数据丢了？受着吧
+
 
 ## 这个文件夹下有什么？
  - HighAcc.hpappdir: 使用mpy编写而成的高精度计算库，支持实数和复数的高精度计算。
