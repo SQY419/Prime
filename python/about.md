@@ -18,7 +18,7 @@ print(ppleval('print("hello ppl!")'))
 ```
 
 
-##这个文件夹下有什么？
+## 这个文件夹下有什么？
  - HighAcc.hpappdir: 使用mpy编写而成的高精度计算库，支持实数和复数的高精度计算。
 
   <img width="584" height="480" alt="image" src="https://github.com/user-attachments/assets/2a4397c6-b827-4c3d-93e8-865db19fd77d" />
@@ -27,5 +27,5 @@ print(ppleval('print("hello ppl!")'))
 
 ![](https://github.com/SQY419/Prime/blob/main/src/000.jpg)
 
-##如何使用？
+## 如何使用？
 将zip文件解压得到***.hpappdir，使用HP Connectivity Kit将整个文件夹传入你的计算器。
