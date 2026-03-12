@@ -26,8 +26,8 @@ def hprint(text):
     hpprime.eval('print2d("'+text+'",0)\n')
   else:
     for i in range(len(text) // 52):
-      hpprime.eval('print2d("'+text[i*52:i*52+52]+'",0)\n')
-    hpprime.eval('print2d("'+text[i*52+52:]+'",0)\n')
+      hpprime.eval('print2d("'+text[i*52: i*52+52]+'", 0)\n')
+    hpprime.eval('print2d("'+text[i*52+52:]+'", 0)\n')
       
 
 print = hprint
@@ -57,6 +57,7 @@ while True:
 
 <img width="320" height="240" alt="image" src="https://github.com/user-attachments/assets/1f47770c-a2a7-45c4-bd9a-94885dbdef0d" />
 
+ - gbemu：GameBoy (Color) 模拟器（须后门）
 
 ## 如何使用？
 将zip文件解压得到***.hpappdir，使用HP Connectivity Kit将整个文件夹传入你的计算器。
