@@ -1,5 +1,5 @@
 ## python程序
-一般使用python和ppl混合编写. ppl是什么？ `Prime Programming Language`，HP Prime自带的编程语言.
+一般使用python或者和ppl混合编写. ppl是什么？ `Prime Programming Language`，HP Prime自带的编程语言.
 HP Prime自带`micropython 1.9.4`.
 
 python与ppl
@@ -17,6 +17,20 @@ from hpprime import eval as ppleval
 print(ppleval('print("hello ppl!")'))
 ```
 
+控制台想使用0号字体？
+```
+def hprint(text):
+  text = text.replace('"', '""')
+  if len(text) <= 52:
+    hpprime.eval('print2d("'+text+'",0)\n')
+  else:
+    for i in range(len(text) // 52):
+      hpprime.eval('print2d("'+text[i*52:i*52+52]+'",0)\n')
+    hpprime.eval('print2d("'+text[i*52+52:]+'",0)\n')
+      
+
+print = hprint
+```
 
 ## 这个文件夹下有什么？
  - HighAcc.hpappdir: 使用mpy编写而成的高精度计算库，支持实数和复数的高精度计算。
