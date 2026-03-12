@@ -27,5 +27,10 @@ print(ppleval('print("hello ppl!")'))
 
 ![](https://github.com/SQY419/Prime/blob/main/src/000.jpg)
 
+ - bad apple: HP Prime 0图片播放bad apple MV
+
+<img width="320" height="240" alt="image" src="https://github.com/user-attachments/assets/1f47770c-a2a7-45c4-bd9a-94885dbdef0d" />
+
+
 ## 如何使用？
 将zip文件解压得到***.hpappdir，使用HP Connectivity Kit将整个文件夹传入你的计算器。
