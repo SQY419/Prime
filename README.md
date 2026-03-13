@@ -1,5 +1,5 @@
 # Prime
-some projects running on HP Prime.
+在HP Prime上运行的好玩的东西.
 
 # 广
 !?强强?!
