@@ -43,6 +43,29 @@ while True:
 ```
 现在你只能按symb+On来重启了。数据丢了？受着吧
 
+卡键盘bug
+```python
+from hpprime import *
+from hpprime import eval as ev
+
+dimgrob(1,320,240,16777215)
+textout(1,0,0,"bug(for version <=15515)",0)
+textout(1,0,20,"app界面卡键盘 (On + Symb 可解)",256*256*255)
+
+textout(1,0,40,"按住A,B,C几秒...",255)
+textout(1,0,60,"按 Esc, 报Error...",255)
+textout(1,0,80,"若 Error 下面出现'键盘', 点确定, 按Apps...",255)
+ 
+while True:
+    if keyboard() & (1 << 16) or keyboard() & (1 << 15) or keyboard() & (1 << 14):
+        print(114514)
+    else: 
+        blit(0, 0, 0, 1) 
+    if keyboard() & (1 << 4):
+        1/0
+```
+重启恢复正常.
+
 
 ## 这个文件夹下有什么？
  - HighAcc.hpappdir: 使用mpy编写而成的高精度计算库，支持实数和复数的高精度计算。
